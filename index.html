@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo" contenteditable="true">Título editable</h1>
+        <div class="botones">
+            <div class="boton-container">
+                <button id="btnSi" class="boton si">Sí</button>
+                <button id="btnNo" class="boton no">No</button>
+            </div>
+            <button id="btnReset" class="boton reset">Reset</button>
+        </div>
+        <div id="contador">
+            <div class="contador-item">
+                <p>Si: <span id="contadorSi">0</span></p>
+            </div>
+            <div class="contador-item">
+                <p>No: <span id="contadorNo">0</span></p>
+            </div>
+            <div class="contador-item">
+                <p>Total: <span id="contadorTotal">0</span></p>
+            </div>
+            <div class="contador-item">
+                <p>Porcentaje Si: <span id="porcentajeSi">0%</span></p>
+            </div>
+            <div class="contador-item">
+                <p>Porcentaje No: <span id="porcentajeNo">0%</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
